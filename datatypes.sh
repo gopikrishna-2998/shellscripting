@@ -8,4 +8,4 @@ echo "sum of two number is: $sum"
 
 LEADERS=("MODI" "CBN" "PAWAN")
 echo "leaders: ${LEADERS[@]}"    #another way of calling variable ${variable_name}
-echo "leaders: ${LEADERS[2]}" 
+echo "leaders: ${LEADERS[2]}"  #it prints PAWAN using index numbers
