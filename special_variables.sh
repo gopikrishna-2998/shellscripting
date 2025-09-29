@@ -7,3 +7,4 @@ echo "current directory: $PWD" #$PWD helps to get current directory
 echo "who is running: $USER"
 echo "home directory: $HOME"
 echo "PID of the scrip: $$" #$$ process instance id.
+echo "PID of the last command background: $!" #$! last command in background
