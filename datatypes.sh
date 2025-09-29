@@ -7,4 +7,5 @@ sum=$(($number1+$number2))
 echo "sum of two number is: $sum"
 
 LEADERS=("MODI" "CBN" "PAWAN")
-echo "leaders: $LEADERS[@]"
+echo "leaders: ${LEADERS[@]}"    #another way of calling variable ${variable_name}
+echo "leaders: ${LEADERS[2]}" 
