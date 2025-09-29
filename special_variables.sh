@@ -6,6 +6,6 @@ echo "script name: $0" #$0 used to get script name in bash
 echo "current directory: $PWD" #$PWD helps to get current directory
 echo "who is running: $USER"
 echo "home directory: $HOME"
-echo "PID of the scrip: $$" #$$ process instance id.
-sleep 10
+echo "PID of the script: $$" #$$ process instance id.
+sleep 10 &
 echo "PID of the last command background: $!" #$! last command in background
