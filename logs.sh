@@ -29,6 +29,7 @@ VALIDATE() {
 dnf list installed mysql &>>$LOG_FILE # install mysql
 if [ $? -ne 0 ]; then
     echo -e " $r mysql installation failed $n" 
+    dnf install mysql -y &>>$LOG_FILE
     VALIDATE $? "mysql"
 else
     echo -e " $g mysql installed successfully $n" | tee -a $LOG_FILE
@@ -38,6 +39,7 @@ fi
 dnf list installed nginx &>>$LOG_FILE 
 if [ $? -ne 0 ]; then
     echo -e " $r nginx installation failed $n" | tee -a $LOG_FILE
+    dnf install nginx -y &>>$LOG_FILE
     VALIDATE $? "nginx"
 else
     echo -e " $g nginx installed successfully $n" | tee -a $LOG_FILE
@@ -46,6 +48,7 @@ fi
 dnf list installed python3 &>>$LOG_FILE 
 if [ $? -ne 0 ]; then
     echo -e " $r python3 installation failed $n" | tee -a $LOG_FILE
+    dnf install python3 -y &>>$LOG_FILE
     VALIDATE $? "python3"
 else
     echo -e " $g python3 installed successfully $n" | tee -a $LOG_FILE
