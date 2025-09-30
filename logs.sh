@@ -28,7 +28,7 @@ VALIDATE() {
 
 dnf list installed  &>>$LOG_FILE # install mysql
 if [ $? -ne 0 ]; then
-    echo -e " $r mysql installation failed $n" | tee -a $LOG_FILE
+    echo -e " $r mysql installation failed $n" 
     VALIDATE $? "mysql"
 else
     echo -e " $g mysql installed successfully $n" | tee -a $LOG_FILE
