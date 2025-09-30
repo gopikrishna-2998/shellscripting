@@ -1,9 +1,9 @@
 #!/bin/bash
 Number=$1
 if [ $Number -lt 10 ]; then
-    echo "The number is less than 10"
+    echo "The number $Number is less than 10"
 esle
-    echo "The number is 10 or greater"
+    echo "The number $Number is 10 or greater"
 fi
 
 #-lt less than
