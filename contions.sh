@@ -4,6 +4,8 @@ Number=$1
 
 if [ $Number -lt 10 ]; then
     echo "The number $Number is less than 10"
+elif [ $Number -eq 10 ]; then
+    echo "The number $Number is equal to 10"
 else
     echo "The number $Number is 10 or greater"
 fi
