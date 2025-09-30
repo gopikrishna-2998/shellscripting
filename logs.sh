@@ -8,6 +8,7 @@ SCRIPT_NAME=$( $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
+touch $LOG_FILE
 echo "script started at $(date)"
 
 USERID=$(id -u)
