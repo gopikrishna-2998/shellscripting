@@ -3,12 +3,12 @@ r="\e[31m"
 g="\e[32m"
 y="\e[33m"
 n="\e[0m"
-LOGS_FOLDER="/var/log/shell-scripts"
+LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
-echo "script started at $(date)" &>>$LOG_FILE
+echo "script started at $(date)"
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
