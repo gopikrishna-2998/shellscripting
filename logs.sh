@@ -38,7 +38,7 @@ fi
 
 dnf list installed nginx &>>$LOG_FILE 
 if [ $? -ne 0 ]; then
-    echo -e " $r nginx installation failed $n" | tee -a $LOG_FILE
+    echo -e " $r nginx installation failed $n" 
     dnf install nginx -y &>>$LOG_FILE
     VALIDATE $? "nginx"
 else
