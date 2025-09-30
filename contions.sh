@@ -1,8 +1,10 @@
 #!/bin/bash
+
 Number=$1
+
 if [ $Number -lt 10 ]; then
     echo "The number $Number is less than 10"
-esle
+else
     echo "The number $Number is 10 or greater"
 fi
 
