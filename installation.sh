@@ -9,8 +9,9 @@ fi
 
 dnf install mysql -y
 
-if [ $? -ne 0 ]; then
+if [ $? -ne 0 ]; then  #$? checks the exit status of the last command
     echo "MySQL installation failed. Please check your network connection and try again."
+    exit 1
 else
     echo "MySQL installed successfully."
 fi
