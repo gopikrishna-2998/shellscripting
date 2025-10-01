@@ -10,7 +10,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 mkdir -p $LOGS_FOLDER
 touch $LOG_FILE
 
-#echo "script started at $(date)"
+echo "script started at $(date)"
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
